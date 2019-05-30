@@ -1,7 +1,5 @@
 ﻿using System.IO;
-
-using EasyBackup;
-
+using EasyBackup.DifferenceCalculation;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Utility.Interop.Native;
 
@@ -64,7 +62,6 @@ namespace UnitTesting
         {
             DifferenceCalculationResults results = DifferenceCalculation.CalculateFileOperations
             (
-                new EmptyFileOperation(),
                 new DirectoryInfo(@"H:\My Files\Boaz"),
                 new DirectoryInfo(@"G:\My Files\Boaz")
             );
@@ -75,7 +72,6 @@ namespace UnitTesting
         {
             DifferenceCalculationResults results = DifferenceCalculation.CalculateFileOperations
             (
-                new EmptyFileOperation(),
                 new DirectoryInfo(@"D:\Music\Music"),
                 new DirectoryInfo(@"H:\My Files\Boaz\Music")
             );
