@@ -41,7 +41,7 @@ namespace EasyBackup
             DirectoryInfo destinationDirectoryInfo
         )
         {
-            return Utility.IO.FileSystem.GetFullPath(Path.Combine
+            return Path.GetFullPath(Path.Combine
             (
                 destinationDirectoryInfo.FullName,
                 GetRelativePath(fileSystemInfo, sourceDirectoryInfo)

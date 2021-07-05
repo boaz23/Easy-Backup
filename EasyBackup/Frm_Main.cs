@@ -57,7 +57,7 @@ namespace EasyBackup
         }
         private bool CheckDirectoryExists(string dirPath, string dirErrorName, out DirectoryInfo directory)
         {
-            directory = new DirectoryInfo(Utility.IO.FileSystem.GetFullPath(dirPath));
+            directory = new DirectoryInfo(Path.GetFullPath(dirPath));
             if (!directory.Exists)
             {
                 MessageBox.Show
