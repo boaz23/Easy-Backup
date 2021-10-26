@@ -87,6 +87,7 @@ namespace EasyBackup
 #endif
             if (!operations.Any())
             {
+                MessageBox.Show(this, "No differences were detected, No action is required.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
 
@@ -103,7 +104,14 @@ namespace EasyBackup
                     fileOperation.AddOperation(operation);
                 }
 
+                if (MessageBox.Show(this, "Are you sure you want to start the operations?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+                {
+                    return;
+                }
+
                 fileOperation.PerformOperations();
+
+                MessageBox.Show(this, "Done.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 //this.Btn_Ok.Enabled = false;
             }
             catch (Exception ex)
