@@ -37,10 +37,10 @@
             // Btn_BrowseDirectory
             // 
             this.Btn_BrowseDirectory.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.Btn_BrowseDirectory.Location = new System.Drawing.Point(365, 0);
-            this.Btn_BrowseDirectory.Margin = new System.Windows.Forms.Padding(3, 0, 0, 0);
+            this.Btn_BrowseDirectory.Location = new System.Drawing.Point(431, 2);
+            this.Btn_BrowseDirectory.Margin = new System.Windows.Forms.Padding(4, 0, 0, 0);
             this.Btn_BrowseDirectory.Name = "Btn_BrowseDirectory";
-            this.Btn_BrowseDirectory.Size = new System.Drawing.Size(75, 23);
+            this.Btn_BrowseDirectory.Size = new System.Drawing.Size(88, 24);
             this.Btn_BrowseDirectory.TabIndex = 9;
             this.Btn_BrowseDirectory.Text = "Browse...";
             this.Btn_BrowseDirectory.UseVisualStyleBackColor = true;
@@ -49,10 +49,10 @@
             // Lbl
             // 
             this.Lbl.AutoSize = true;
-            this.Lbl.Location = new System.Drawing.Point(-3, 5);
+            this.Lbl.Location = new System.Drawing.Point(-4, 6);
             this.Lbl.Margin = new System.Windows.Forms.Padding(0);
             this.Lbl.Name = "Lbl";
-            this.Lbl.Size = new System.Drawing.Size(31, 13);
+            this.Lbl.Size = new System.Drawing.Size(31, 15);
             this.Lbl.TabIndex = 8;
             this.Lbl.Text = "Text:";
             // 
@@ -60,24 +60,24 @@
             // 
             this.TxtBox_DirectoryFullPath.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.TxtBox_DirectoryFullPath.Location = new System.Drawing.Point(31, 2);
-            this.TxtBox_DirectoryFullPath.Margin = new System.Windows.Forms.Padding(3, 0, 3, 0);
+            this.TxtBox_DirectoryFullPath.Location = new System.Drawing.Point(36, 2);
+            this.TxtBox_DirectoryFullPath.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.TxtBox_DirectoryFullPath.Name = "TxtBox_DirectoryFullPath";
-            this.TxtBox_DirectoryFullPath.Size = new System.Drawing.Size(328, 20);
+            this.TxtBox_DirectoryFullPath.Size = new System.Drawing.Size(387, 23);
             this.TxtBox_DirectoryFullPath.TabIndex = 7;
             this.TxtBox_DirectoryFullPath.TextChanged += new System.EventHandler(this.TxtBox_DirectoryFullPath_TextChanged);
             // 
             // BrowseFolder
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.Btn_BrowseDirectory);
             this.Controls.Add(this.Lbl);
             this.Controls.Add(this.TxtBox_DirectoryFullPath);
             this.DoubleBuffered = true;
-            this.Margin = new System.Windows.Forms.Padding(3, 1, 3, 1);
+            this.Margin = new System.Windows.Forms.Padding(4, 1, 4, 1);
             this.Name = "BrowseFolder";
-            this.Size = new System.Drawing.Size(440, 22);
+            this.Size = new System.Drawing.Size(518, 28);
             this.ResumeLayout(false);
             this.PerformLayout();
 
