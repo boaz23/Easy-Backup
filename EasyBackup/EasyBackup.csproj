@@ -2,16 +2,19 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net5.0-windows</TargetFramework>
+    <TargetFramework>net6.0-windows</TargetFramework>
     <UseWindowsForms>true</UseWindowsForms>
   </PropertyGroup>
 
   <ItemGroup>
     <Reference Include="FileOperation">
-      <HintPath>..\..\File-Operation\FileOperation\bin\Debug\net5.0\FileOperation.dll</HintPath>
+      <HintPath>..\..\File-Operation\FileOperation\bin\Debug\net6.0\FileOperation.dll</HintPath>
     </Reference>
     <Reference Include="Utility">
-      <HintPath>..\..\Utility\Utility\bin\Debug\net5.0\Utility.dll</HintPath>
+      <HintPath>..\..\Utility\Utility\bin\Debug\net6.0\Utility.dll</HintPath>
+    </Reference>
+    <Reference Include="Utility.IlLib">
+      <HintPath>..\..\Utility\Utility.IlLib\bin\Debug\net6.0\Utility.IlLib.dll</HintPath>
     </Reference>
   </ItemGroup>
 

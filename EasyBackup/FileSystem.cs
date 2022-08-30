@@ -1,6 +1,6 @@
 ﻿using System.IO;
 
-using static Utility.Numbers;
+using static Utility.NumbersOperators;
 using static Utility.Strings;
 
 namespace EasyBackup
@@ -55,7 +55,7 @@ namespace EasyBackup
                 return null;
             }
 
-            if (File.GetAttributes(destFilePath).HasAnyOfFlags(FileAttributes.Directory))
+            if (HasAnyOfFlags(File.GetAttributes(destFilePath), FileAttributes.Directory))
             {
                 return new DirectoryInfo(destFilePath);
             }
