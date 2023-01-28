@@ -200,7 +200,7 @@ namespace EasyBackup.DifferenceCalculation
                     sourceDirectory,
                     destDirectory
                 );
-                if (!Utility.IO.FileSystem.DoesPathExist(destFilePath))
+                if (!Utility.IO.FileSystem.DoesPathExist(matchingFilePath))
 #endif
                 {
                     results.AddDeleteOperation(fileSystemInfo.FullName);
