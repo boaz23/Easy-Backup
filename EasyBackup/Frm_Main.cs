@@ -86,9 +86,15 @@ namespace EasyBackup
             List<FileOperationItem> operationsList = operations.ToList();
             operations = operationsList;
 #endif
+
             if (!operations.Any())
             {
                 MessageBox.Show(this, "No differences were detected, No action is required.", "", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+
+            if (MessageBox.Show(this, "Are you sure you want to start the operations?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
+            {
                 return;
             }
 
@@ -103,11 +109,6 @@ namespace EasyBackup
                 foreach (FileOperationItem operation in operations)
                 {
                     fileOperation.AddOperation(operation);
-                }
-
-                if (MessageBox.Show(this, "Are you sure you want to start the operations?", "Confirmation", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.No)
-                {
-                    return;
                 }
 
                 fileOperation.PerformOperations();
